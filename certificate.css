@@ -1,0 +1,42 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #FFD56F;
+}
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    margin-left: 10px;
+    margin-top: 30px;
+    color: white;
+  
+}
+hr{
+    width: 50%;
+    float: left;
+    color: white;
+}
+.certificate{
+    padding: 30px;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+@media(min-width:1000px){
+    .certificate{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+
+
+    }
+}
+i{
+    margin-left: 10px;
+    margin-top: 40px;
+    
+}

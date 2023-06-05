@@ -1,0 +1,197 @@
+nav a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #FFD56F;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    min-height: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    transition: top 0.3s;
+    background-color: #FFD56F;
+}
+.poster{
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #FFD56F;
+    justify-content: space-evenly;
+    align-items: center;
+    display:flex;
+    width: 100%;
+    padding: 20px;
+    min-height: 500px;
+    margin-top: 80px;
+    gap: 20px;
+
+}
+.poster1{
+    color:#FFAB5E;
+    font-size: 40px;
+    font-family: 'Barlow', sans-serif;
+    flex: 2;
+}
+.poster2{
+    flex:1;
+}
+img{
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.poster3{
+    flex: 1;
+    font-family: 'Barlow', sans-serif;
+    color:#FFAB5E;
+    font-size: 40px;
+    padding: 30px;
+}
+h2{
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 90px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.skill{
+    display: grid;
+    grid-template-rows:minmax(400,600);
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.appdev{
+    min-height: 500px;
+    background-color: #043671;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    border: 1px solid;
+    border-radius: 5%;
+}
+.icon{
+    color: white;
+    
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+.appdev>*{
+    font-family: 'Fjalla One', sans-serif;
+}
+.appdev>h3{
+    color: greenyellow;
+    margin-top: 30px;
+}
+.appdev>p,li{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+#phead{
+    color: #ff1361;
+}
+@media(max-width:1100px){
+    .poster{
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #FFD56F;
+        justify-content: space-evenly;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        min-height: 500px;
+        margin-top: 80px;
+        gap: 20px;
+        
+    }
+    h2{
+        text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+    
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+          font-size: 60px;
+    }
+    .poster1{
+        color:#FFAB5E;
+        font-size: 40px;
+        font-family: 'Barlow', sans-serif;
+        flex: 1;
+        padding: 20px;
+    }
+    .deve{
+        text-align:start;
+        font-size: 38px;
+        text-align: center;
+        margin-left: -30px;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
+@media(min-width:700px){
+    nav{
+        justify-content: space-evenly;
+    }
+}
